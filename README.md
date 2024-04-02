@@ -25,13 +25,19 @@ Using Laplacian operator from cv2,detect the edges of the image and Using Canny 
 ## Programs
 ## Developed by : Sri Varshan P
 ## Reg.No. 212222240104
+
+### Original Image
+
+![SampleColor](https://github.com/PSriVarshan/EDGE-DETECTION/assets/114944059/9e6c4210-9abc-430a-8d14-5acedf1670f3)
+
+
 ### Convert image to grayscale and remove noise
 
 ```py
 import cv2
 import matplotlib.pyplot as plt
 
-img=cv2.imread("SampleGray.jpg",0)
+img=cv2.imread("SampleColor.jpg",0)
 gray=cv2.cvtColor(img,cv2.COLOR_GRAY2RGB)
 gray = cv2.GaussianBlur(gray,(3,3),0)
 ```
